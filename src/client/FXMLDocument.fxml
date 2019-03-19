@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="576.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.FXMLDocumentController">
+    <children>
+      <AnchorPane fx:id="tastatur" layoutX="6.0" layoutY="359.0" prefHeight="212.0" prefWidth="635.0" visible="false">
+         <children>
+              <Button id="A" fx:id="button" contentDisplay="CENTER" layoutX="82.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="A" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="B" fx:id="button1" contentDisplay="CENTER" layoutX="135.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="B" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="C" fx:id="button14" contentDisplay="CENTER" layoutX="184.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="C" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="J" fx:id="button7" contentDisplay="CENTER" layoutX="527.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="J" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="I" fx:id="button8" contentDisplay="CENTER" layoutX="483.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="I" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="H" fx:id="button9" contentDisplay="CENTER" layoutX="430.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="H" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="G" fx:id="button10" contentDisplay="CENTER" layoutX="379.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="G" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="F" fx:id="button11" contentDisplay="CENTER" layoutX="335.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="F" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="E" fx:id="button12" contentDisplay="CENTER" layoutX="288.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="E" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="D" fx:id="button13" contentDisplay="CENTER" layoutX="236.0" layoutY="30.0" minWidth="-Infinity" onAction="#handleButtonAction" text="D" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="O" fx:id="button2" contentDisplay="CENTER" layoutX="286.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="O" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="N" fx:id="button3" contentDisplay="CENTER" layoutX="236.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="N" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="M" fx:id="button4" contentDisplay="CENTER" layoutX="186.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="M" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="L" fx:id="button5" contentDisplay="CENTER" layoutX="137.0" layoutY="86.0" onAction="#handleButtonAction" text="L" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="K" fx:id="button6" contentDisplay="CENTER" layoutX="87.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="K" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="P" fx:id="button15" contentDisplay="CENTER" layoutX="335.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="P" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="T" fx:id="button25" contentDisplay="CENTER" layoutX="526.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="T" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="S" fx:id="button26" contentDisplay="CENTER" layoutX="481.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="S" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="R" fx:id="button27" contentDisplay="CENTER" layoutX="432.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="R" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Q" fx:id="button28" contentDisplay="CENTER" layoutX="379.0" layoutY="86.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Q" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Å" fx:id="button16" contentDisplay="CENTER" layoutX="511.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Å" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Ø" fx:id="button17" contentDisplay="CENTER" layoutX="465.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Ø" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Æ" fx:id="button18" contentDisplay="CENTER" layoutX="415.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Æ" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Z" fx:id="button19" contentDisplay="CENTER" layoutX="367.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Z" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="Y" fx:id="button20" contentDisplay="CENTER" layoutX="319.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="Y" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="X" fx:id="button21" contentDisplay="CENTER" layoutX="273.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="X" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="W" fx:id="button22" contentDisplay="CENTER" layoutX="220.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="W" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="V" fx:id="button23" contentDisplay="CENTER" layoutX="169.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="V" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="U" fx:id="button24" contentDisplay="CENTER" layoutX="118.0" layoutY="139.0" minWidth="-Infinity" onAction="#handleButtonAction" text="U" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+        <Label fx:id="label" layoutX="116.0" layoutY="49.0" minHeight="16" minWidth="69" prefHeight="21.0" prefWidth="460.0" text="Gæt ordet" visible="false" />
+      <AnchorPane fx:id="Login_creds" layoutX="96.0" layoutY="162.0" prefHeight="200.0" prefWidth="477.0">
+         <children>
+            <Button fx:id="loginButton" layoutX="336.0" layoutY="99.0" mnemonicParsing="false" onAction="#attemptLogin" text="login" />
+            <TextField fx:id="username1" layoutX="52.0" layoutY="69.0" promptText="Username" />
+            <TextField fx:id="password1" layoutX="52.0" layoutY="114.0" promptText="password" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
