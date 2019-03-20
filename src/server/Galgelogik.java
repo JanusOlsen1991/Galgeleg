@@ -19,6 +19,11 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import org.json.JSONObject;
 
 public class Galgelogik {
   /** AHT afprøvning er muligeOrd synlig på pakkeniveau */
@@ -158,7 +163,7 @@ public class Galgelogik {
 
 
   public void hentOrdFraDr() throws Exception {
-    String data = hentUrl("https://dr.dk");
+    /*String data = hentUrl("https://dr.dk");
     //System.out.println("data = " + data);
 
     data = data.substring(data.indexOf("<body")). // fjern headere
@@ -179,6 +184,26 @@ public class Galgelogik {
     muligeOrd.addAll(new HashSet<String>(Arrays.asList(data.split(" "))));
 
     System.out.println("muligeOrd = " + muligeOrd);
-    nulstil();
+    nulstil();*/
+    Client c = ClientBuilder.newClient();
+      Response r = c.target("https://www.dr.dk/mu-online/api/1.4/schedule/nownext/dr1").request(MediaType.APPLICATION_JSON).get();
+      String s = r.readEntity(String.class);
+      JSONObject json = new JSONObject(s);
+      
+      ArrayList<String> temp = new ArrayList<>();
+      String s1 = json.getJSONObject("Now").getString("Description");
+              s1 = s1.replace("?", "").replace(".","").replace(",","").replace("!","").replace("/","");
+
+              s1.toLowerCase();
+              String[] ss = s1.split(" ");
+              
+      for(String t : ss){
+          t.trim();
+          if(t.length()>=3)
+              temp.add(t);
+      }
+      muligeOrd = temp;
+      nulstil();
+             
   }
 }
